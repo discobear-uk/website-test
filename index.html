@@ -1,0 +1,33 @@
+---
+layout: page
+title: home | First Sunday
+
+---
+
+<p><strong>LGBTQ+ and Christian in Oxford UK?</strong> <emphasis>FIRST
+SUNDAY</emphasis> is fellowship for people who are lesbian, gay,
+bisexual, trans, or questioning their sexuality (LGBTQ). We're part of
+<a href="http://www.saintcolumbas.org/">St Columba's United Reformed Church</a>
+in Oxford, UK, and meet there on the first Sunday of the month. You
+don't have to be LGBTQ or a Christian to come along.</p>
+
+<p>Our Sunday evening meetings start with some time to catch up over
+coffee, pizza and cake. Then we have an activity for the evening which
+may be a visiting speaker, a discussion or something crafty, and we
+finish the evening with a simple communion.</p>
+
+{% assign filtered_posts = site.categories.event | where_exp: "post", "post.date >= site.time" %}
+{% assign sorted_posts = filtered_posts | sort: "date" %}
+
+{% for post in sorted_posts %}
+
+<div class="nextup"><h1>next_</h1>
+  <p>
+    <span class="sunday">{{post.title}}</span></br>
+    <span class="sunday">@:</span>{{post.location}}</br>
+    <span class="sunday">Date: </span><strong>{{post.date | date: "%A"}} {{post.date | date_to_long_string: "ordinal"}}</strong> from {{post.date | date: "%l.%M%P" }}</br>
+  </p>
+
+{{ post.content }}
+
+{% endfor %}
