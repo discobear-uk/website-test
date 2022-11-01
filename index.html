@@ -1,6 +1,6 @@
 ---
 layout: page
-title: home | First Sunday
+title: home |
 
 ---
 
@@ -21,7 +21,7 @@ finish the evening with a simple communion.</p>
 
 {% for post in sorted_posts %}
 
-<div class="nextup"><h1>next_</h1>
+<div class="{% cycle "next", "then", "then" %}"><h1>{% cycle "next_", "then_", "later_" %}</h1>
   <p>
     <span class="sunday">{{post.title}}</span></br>
     <span class="sunday">@:</span>{{post.location}}</br>
@@ -29,5 +29,6 @@ finish the evening with a simple communion.</p>
   </p>
 
 {{ post.content }}
+ </div>
 
 {% endfor %}
