@@ -1,8 +1,34 @@
 ---
-layout: page
+layout: home
 title: home |
 
 ---
+
+<link rel="stylesheet" href="service3.css" />
+
+<div id="container">
+    <div id="containercontainer">
+        <div id="containertext">
+        <span class="body-img"><a href="http://www.firstsunday.info/"><img src="images/fsiilogo.gif"
+        alt="First Sunday" id="one" width="283"
+        height="73"></img></a><!--img src="images/boybanner.gif"
+        alt="" id="three" width="511"
+        height="106"></img--><img src="images/fsiinewstrapline.gif"
+        id="two" width="264" height="18" alt="positively inclusive
+        christian fellowship"></img></span>
+        <div id="body-replace"><h1>First Sunday: LGBT@St
+        Columba's</h1><br/><h2>Positively inclusive Christian
+        Fellowship</h2></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- container area -->
+<div id="twocolumncontainer">
+    <div id="main_content_area"><!-- content area starts -->
+        <div id="inline">
+            <span class="body-none"><a href="#navlinks">Skip to navigation</a></span>
 
 <p><strong>LGBTQ+ and Christian in Oxford UK?</strong> <emphasis>FIRST
 SUNDAY</emphasis> is fellowship for people who are lesbian, gay,
@@ -21,7 +47,7 @@ finish the evening with a simple communion.</p>
 
 {% for post in sorted_posts %}
 
-<div class="{% cycle "next", "then", "then" %}"><h1>{% cycle "next_", "then_", "later_" %}</h1>
+<div class="{% cycle "nextup", "then", "then" %}"><h1>{% cycle "next_", "then_", "later_" %}</h1>
   <p>
     <span class="sunday">{{post.title}}</span></br>
     <span class="sunday">@:</span>{{post.location}}</br>
@@ -32,3 +58,35 @@ finish the evening with a simple communion.</p>
  </div>
 
 {% endfor %}
+        </div><!-- end of inline-->
+    </div><!-- end of main_content_area-->
+    <!--start of nav column-->
+    <div id="lh_nav">
+        <div id="startnav">
+            <ul>
+                <li> <span class="here">home</span> </li>
+                <li> <a href="contact.html" class="n1">contact us</a> </li>
+                <li> <a href="past.html" class="n1">archive</a> </li>
+                <li> <a href="rhythm.html" class="n1">values</a> </li>
+                <li> <a href="statement.html" class="n1">statement</a> </li>
+		<li> <a href="writing.html" class="n1">writing</a> </li>
+            </ul>
+        </div><!--end of startnav-->
+    </div><!--end of lh_nav -->
+</div><!-- end of twocolumncontainer-->
+
+
+ <!-- copyright-->
+<div id="copyright">
+<img src="images/fsiifadingline.gif" alt=""></img>
+
+    <p>&copy; 2004-2022 St Columba's United Reformed Church Oxford. All
+    rights reserved.<br />
+
+    <span class="body-img"><a name="navlinks"></a></span>
+    <span class="body-replace">Originating URl: www.FirstSunday.info/
+    index.html</span>
+    </p>
+</div>
+
+<!-- end of copyright-->

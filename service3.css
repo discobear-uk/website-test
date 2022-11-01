@@ -1,0 +1,561 @@
+body, html {margin: 0; padding:0; width:100%; background-color: #FFFFFF;}
+
+/*/*/
+a:focus {text-decoration:underline; background-color:#CCCCCC;}
+/* end */
+/*/*/
+p {font-size: 70%; color: #494949; line-height: 1.4em;}
+/* end */
+
+/*containing div */
+/*/*/
+#container {position:absolute; background-color: white; /*/* \*/ /* end */ height: 120px; width: 320px; margin: 0; padding-left: 0px; padding-bottom: 5px; z-index: 20;}
+/* end */
+
+#container a {border-width:0; text-decoration:none;}
+
+/* IE PC sees this \*/
+* html #container {height: 100px;}
+/* End hide from IE5-mac */
+
+/*/*/
+#container img {}
+/* end */
+
+#container img#one, #container img#two {display: block;}
+
+
+/*/*/
+#container img#one {margin: 0; border-width:0; padding:10px 0px 5px 13px; width:283px;}
+/* end */
+
+/*/*/
+#container img#two {margin: 0px; border-width:0; padding:0px 0px 5px 13px; width:264px; }
+/* end */
+
+/* containing div for header text*/
+
+#containertext {
+    margin: 0; 
+    padding: 0;
+}
+
+
+/*/*/
+.housekeeping {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 100%; 
+    color:#18647c; 
+    font-weight: normal;
+}
+
+.housekeeping a{
+    text-decoration:underline; 
+    font-weight: bold;
+}
+
+.housekeeping a:hover {
+    color:#fe39cc;
+}
+/* end */
+
+/*content area behaviour */
+
+/*/*/
+#twocolumncontainer {width: 100%;}
+/* end */
+
+/*/*/
+#main_content_area {
+    max-width: 800px;
+    clear: none;
+    padding: 120px 15px 5px 15px; 
+    margin: 0px 0px 0px 97px; 
+    height:auto;
+    background-color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;}
+/* end */
+
+
+
+
+/* navigation behaviour */
+#lh_nav {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    background-color:#FFFFFF; 
+}
+/*/*/
+#lh_nav {
+    position:absolute; 
+    line-height: 0.75em; 
+    width: 96px; 
+    top:0; 
+    left:0; 
+    height:auto; 
+    padding-top: 135px; 
+    text-align:left; 
+    font-size: 80%; 
+    display:block; /*/* \*/
+		   background-image: url(images/fsii3dhalo.gif); 
+    background-repeat: no-repeat; /* end */
+}
+/* end */
+
+
+
+#startnav {
+    padding: 0px 0px 0px 10px;
+}
+
+#startnav ul {
+    margin-top: 0px;
+}
+
+/* NS 4 sees this */
+#startnav li {
+    list-style-type: square; 
+    padding: 0px 0px 2px 4px; 
+    line-height: 1em; 
+    margin: 0em 0px 4px -32px; 
+    background-color: none; 
+    text-decoration: none;
+}
+
+/* IE 5.x/ MAC sees this */
+/*/*/#startnav li {list-style-type: none; padding: 0px 0px 2px 4px; line-height: 1em; margin: 0em 0px 4px -32px;}/* end */
+
+/* everyone else rewrites this */
+/*/*/@media all {#startnav li {margin: 0em 0px 4px -45px;} }/* end */
+
+/*/*/
+#startnav a {
+    color: #18647c; 
+    text-decoration:none; 
+    display:block; 
+    padding: 0px 2px 0px 5px; 
+    font-weight:bold;
+}
+/* end */
+
+/*/*/
+#startnav a:hover {background-color: none; 
+color: #fe39cc; padding: 0px 2px 0px 5px;}
+/* end */
+
+/*/*/
+#startnav a:focus {
+    background-color: none; 
+    color:#fe39cc; 
+    padding: 0px 2px 0px 5px;
+}
+/* end */
+
+/* For IE 5.x/WIN */
+/*/*/
+#startnav .here {list-style-type:none; text-decoration:none; background-color: none; 
+color:#18647c; font-weight:bold; /* margin: -0.12em 0px -1em 0px; */ margin: 0em 0px 0.15em -4px; padding: 0px 2px 0px 5px;}
+/* end */
+
+/*/*/
+#startnav .here {
+    border-left: solid 4px #fe39cc;
+}
+/* end */
+
+
+/*For everyone else */
+#startnav .here { 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  margin-bottom: 0em; padding: 0px 2px 0px 5px;
+} 
+
+
+.n1 {background-color: none;}
+
+
+/* standard body text link behaviour */
+/*/*/
+p a:link {
+    color: #18647c; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+p a:visited {
+    color: #18647c; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline
+}
+p a:hover { 
+    font-weight: normal; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    color: #fe39cc;
+}
+.muchlater img {
+    border-width: 0; 
+    margin: 0px;
+}
+a img {
+    border: none;
+}
+/* end */
+
+
+/* body text span classes */
+
+/* body text span classes */
+/*/*/
+.sunday { 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #18647c
+}
+.listentry { 
+    font-style: normal; 
+    font-weight: bold; 
+    color: #FF33CC; 
+    list-style-type:square
+}
+/* end */
+
+/*/*/
+.pullquote {
+    width: auto; 
+    margin: 14px 0px 0px 13px;
+}
+
+.pulled {
+    border:#494949; 
+    border-style: solid; 
+    border-width: 0px 0px 1px 0px; 
+    width: 140px; 
+    padding: 5px 0px 5px 13px; 
+    font-size: 80%; 
+    line-height: 1.3em; 
+    color: #494949;
+}
+.pulled a {
+    text-decoration: none; 
+    color:#494949; 
+    font-weight: bold;
+}
+/* end */
+
+/*/*/
+h1 {
+    color: #18647c; 
+    font-size:95%; 
+    font-weight: bold; 
+    padding-top: 0.25em;
+}
+/* end */
+
+/*/*/
+.nextup {
+    margin-bottom: 0em;
+}
+.then {
+    margin-bottom: 0em;
+}
+.later {
+    margin-bottom: 0em;
+}
+.pride{
+    margin-bottom: 0em;
+}
+
+.next img {
+    float: left; 
+    padding-right: 10px; 
+    padding-bottom: 20px;
+}
+.then img {
+    float: left; 
+    padding-right: 10px; 
+    padding-bottom: 20px;
+}
+.later img {
+    float: right; 
+    padding-right: 10px; 
+    padding-bottom: 20px;
+}
+.pride img {
+    float: left; 
+    padding-right: 10px; 
+    padding-bottom: 20px;
+}
+
+/* end */
+
+/*/*/
+.floatright {
+    float:right; 
+    margin-left: 1em; 
+    border: 1px solid black;
+}
+/* end */
+
+/*footer*/
+
+/*/*/
+#copyright {
+    display:block; 
+    clear:both; 
+    padding: 5px 7px 5px 0px; 
+    background-color: #FFFFFF; 
+    width:auto; 
+    margin: 75px 20px 5px 10px;
+} 
+
+#copyright p {
+    font-size: 60%; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #494949; 
+    text-align: left;
+}
+/* end */
+
+#copyright {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    text-align: left; 
+}
+/* related to the print style sheet */
+/*/*/
+#body-replace {
+    visibility: hidden; 
+    display: none;
+}
+.body-replace {
+    visibility: hidden; 
+    display: none;
+}
+.body-img {
+    visibility: visible; 
+    display:inherit;
+}
+.body-none {
+    visibility: hidden; 
+    display:none;
+}
+
+/* end */
+/*/*/
+#inline ul {
+    font-size: 70%; 
+    color: #18647c; 
+    line-height: 1.4em; 
+    list-style-type: square; 
+    margin: 0em; 
+    padding-left: 1em;
+}
+#inline ul ul {
+    font-size: 100%; 
+    color: #18647c; 
+    line-height: 1.4em; 
+    list-style-type: square; 
+    margin: 0em; 
+    padding-left: 1em;
+}
+/* end */
+
+/*/*/
+h2 {
+    color: #18647c; 
+    font-size:80%; 
+    font-weight: bold; 
+    padding-top: 0.25em;
+}
+/* end */
+
+/*/*/
+h1 .pink {
+    color: #fe39cc; 
+    font-size:80%; 
+    font-weight: bold; 
+    padding-top: 0.25em;
+}
+/* end */
+/*/*/
+
+.nextup h1 {background: #999999; color: white; padding: 3px; margin-top: 0px; margin-bottom: 2em; font-size: 12px;}
+.nextup {
+    background: url(./images/pink2.jpg) no-repeat;
+    padding: 2px 2px 0px 2px;
+    overflow: hidden;
+}
+.nextup p {
+    padding-left: 50px;
+}
+
+.nextup .link {
+    background: #18647c; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px;
+}
+/* end */
+
+.then h1 {
+    background: #999999;
+    color: white;
+    padding: 3px;
+    margin-top: 0px;
+    margin-bottom: 1em;
+    font-size: 12px;
+    overflow: hidden;
+}
+.then {
+    padding: 2px 2px 0px 2px;
+}
+.then p {
+    padding-left: 50px;
+}
+
+.then .link {
+    background: #18647c; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px;
+}
+/* end */
+
+.later {
+    padding: 2px 2px 0px 2px;
+    overflow: hidden;
+}
+.later h1 {
+    background: #999999;
+    color: white;
+    padding: 3px;
+    margin-top: 0px;
+    margin-bottom: 1em;
+    font-size: 12px;
+}
+.later p {padding-left: 50px;}
+.later h2 {padding-left: 50px;}
+.later hr {width: 50%; margin-left: 50px;}
+
+.later .link {
+    background: #18647c; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px;
+}
+/* end */
+
+.pride h1 {
+    background: #999999; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px; 
+    margin-bottom: 2em; 
+    font-size: 12px; 
+    overflow: hidden
+}
+.pride {
+    background: url(./images/flag.jpg) no-repeat; 
+    padding: 2px 2px 0px 2px; 
+    overflow: hidden;
+}
+.pride p {padding-left: 50px;}
+
+.pride .link {
+    background: #18647c; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px;
+}
+/* end */
+
+.labyrinth h1 {
+    background: #999999; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px; 
+    margin-bottom: 2em; 
+    font-size: 12px;
+}
+.labyrinth {
+    background: url(./images/labyrinthpink.jpg) no-repeat; 
+    border: 1px dotted grey; 
+    padding: 2px 2px 0px 2px;
+}
+.labyrinth p {
+    padding-left: 50px;
+}
+
+.labyrinth .link {
+    background: #18647c; 
+    color: white; 
+    padding: 3px; 
+    margin-top: 0px;
+}
+/* end */
+
+/* boxout added by agps 22 12 2010 for equal love page */
+#boxout {
+    background: #eeeeee;
+    float: right;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+#boxout p a:link {
+    color: #18647c; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+#boxout p a:visited {
+    color: #18647c; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline
+}
+#boxout p a:hover { 
+    font-weight: normal; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    color: #fe39cc;
+}
+#boxout p {
+    text-align: left;
+}
+/* end */
+
+#splash {
+    float: right;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fe39cc;
+}
+#splash p {
+    text-align: left;
+}
+#splash h1 {
+    color: #fe39cc; 
+    font-size:80%; 
+    font-weight: bold; 
+    padding-top: 0.25em;
+}
+
+.clear {
+    clear: both;
+}
